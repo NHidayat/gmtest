@@ -1,0 +1,29 @@
+.tabs .tabs-header {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.tabs-header li {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #f8ede3;
+  text-align: center;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+/* .tabs-header li:hover {
+  background: #bdd2b6;
+} */
+
+.tabs-header li.active {
+  background: #bdd2b6;
+}
+
+.tabs .tabs-content {
+  border: 1px solid #a2b29f;
+  padding: 1rem;
+  border-radius: 5px;
+}
