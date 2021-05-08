@@ -96,10 +96,11 @@ input.form-control {
   background: var(--blue3);
 }
 
-.sidebar a i {
+.sidebar a svg {
   font-size: 1.5em;
   display: block;
   margin-bottom: 0.3rem;
+  margin-left: 20px;
 }
 
 .main-content {
@@ -268,6 +269,7 @@ input.form-control {
   width: 100%;
   max-height: 500px;
   padding: 10px;
+  margin-bottom: 1rem;
   /* overflow: hidden; */
 }
 
@@ -291,5 +293,4 @@ input.form-control {
 .frame-content {
   background-color: #fff;
   padding: 20px;
-  height: 1000px;
 }
