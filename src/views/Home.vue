@@ -1,63 +1,7 @@
 <template>
   <div class="home">
-    <div class="sidebar">
-      <a href="#">
-        <i class="fa fa-home"></i>
-        <span>Home</span>
-      </a>
-      <a href="#">
-        <i class="fa fa-home"></i>
-        <span>Antrian</span>
-      </a>
-      <a href="#">
-        <i class="fa fa-ambulance"></i>
-        <span>Regis</span>
-      </a>
-      <a href="#" class="active">
-        <i class="fa fa-ambulance"></i>
-        <span>Rajal</span>
-      </a>
-      <a href="#">
-        <i class="fa fa-ambulance"></i>
-        <span>Ranap</span>
-      </a>
-      <a href="#">
-        <i class="fa fa-ambulance"></i>
-        <span>Rekmed</span>
-      </a>
-      <a href="#">
-        <i class="fa fa-ambulance"></i>
-        <span>Farmasi</span>
-      </a>
-      <a href="#">
-        <i class="fa fa-ambulance"></i>
-        <span>Lab</span>
-      </a>
-      <a href="#">
-        <i class="fa fa-ambulance"></i>
-        <span>Radiologi</span>
-      </a>
-      <a href="#">
-        <i class="fa fa-ambulance"></i>
-        <span>Kasir</span>
-      </a>
-      <a href="#">
-        <i class="fa fa-ambulance"></i>
-        <span>Sekre</span>
-      </a>
-    </div>
-    <navbar class="navbar">
-      <div>
-        <a href="#"><i class="fa fa-arrow-left"></i></a>
-      </div>
-      <div class="page-title">Rawat Jalan</div>
-      <div>
-        <div class="input-group">
-          <input type="search" class="form-control" />
-          <i class="fa fa-search icon-search"></i>
-        </div>
-      </div>
-    </navbar>
+    <Sidebar />
+    <Navbar />
     <section class="main-content">
       <div class="card-list">
         <div class="card-1 card-item">
@@ -206,11 +150,15 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
+import Sidebar from '@/components/Sidebar.vue'
+import Navbar from '@/components/Navbar.vue'
 
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    Sidebar,
+    Navbar
+  }
 }
 </script>
 
